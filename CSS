@@ -12,13 +12,20 @@ body {
 
 #container{
 	max-width: 600px;
-	margin: 0 auto //makes centered
+	margin: 0 auto; //makes centered
 }
 
 h1 {
 color: white;
+text-align: center;
 }
 
 span {
     color: white;
+}
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
 }
