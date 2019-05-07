@@ -1,5 +1,7 @@
 body {
 	background-color: #232323;
+	margin: 0;	
+	font-family: "Montserrat",""Avenir"
 }
 
 .square {
@@ -10,7 +12,7 @@ body {
 	margin: 1.66%;
 }
 
-#container{
+#container {
 	max-width: 600px;
 	margin: 0 auto; //makes centered
 }
@@ -18,14 +20,23 @@ body {
 h1 {
 color: white;
 text-align: center;
+background: steelblue;
+margin: 0;
+font-weight: normal;
+text-transform: uppercase;
+
 }
 
 span {
-    color: white;
+    
 }
 
 #stripe {
 	background: white;
 	height: 30px;
 	text-align: center;
+}
+
+.selected{
+	background: blue;
 }
