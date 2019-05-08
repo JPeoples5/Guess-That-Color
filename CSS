@@ -3,13 +3,17 @@ body {
 	margin: 0;	
 	font-family: "Montserrat",""Avenir"
 }
-
+/* initial colors of squares are purple. JS will manipulate.*/
 .square {
 	width: 30%;
 	background: purple;	
 	padding-bottom: 30%;
 	float: left;
 	margin: 1.66%;
+	border-radius: 15%;
+	transition: background 0.4s;
+	--webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s; /*more browser support*/
 }
 
 #container {
@@ -35,8 +39,35 @@ span {
 	background: white;
 	height: 30px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .selected{
-	background: blue;
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%; /*will take up 100% of the containing element*/
+	font-weight: 600;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all .5s; /* what property | how long */
+	--webkit-transition: all .5s;
+	-moz-transition:all .5s; /*more browser support*/
+	
+}
+
+button:hover{
+	color: white;
+	background: steelblue;
+}
+
+#message{
+	display: inline-block;
+	width: 20%;
 }
