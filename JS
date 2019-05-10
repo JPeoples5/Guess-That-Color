@@ -29,7 +29,6 @@ for(var i = 0; i < modeButtons.length; i++){
 	});
 }
 
-
 function reset(){
 	colors = generateRandomColors(numSquares);
 	// pick new rand color from arr
@@ -45,9 +44,10 @@ function reset(){
 	
 }
 
-/*Easy Mode
+//Easy Mode
 easyBTN.addEventListener("click", function(){
-	hardBTN.classList.remove("selected");
+    messageDisplay.textContent = ""
+    hardBTN.classList.remove("selected");
 	easyBTN.classList.add("selected");
 	numSquares = 3;
 	colors = generateRandomColors(numSquares);
@@ -64,6 +64,7 @@ easyBTN.addEventListener("click", function(){
 
 //Hard Mode
 hardBTN.addEventListener("click", function(){
+    messageDisplay.textContent = ""
 	hardBTN.classList.add("selected");
 	easyBTN.classList.remove("selected");
 	numSquares = 6;
@@ -75,7 +76,7 @@ hardBTN.addEventListener("click", function(){
 		squares[i].style.display = "block";
 	}
 });
-*/
+
 //Reset game with new colors 
 resetButton.addEventListener("click", function(){
 	//gen all new colors
@@ -139,8 +140,5 @@ function randomColor(){
 	let r = Math.floor(Math.random() * 256);
 	let g = Math.floor(Math.random() * 256);	
 	let b = Math.floor(Math.random() * 256);
-	return "rgb(" + r + ", " + g + ", " + b + ")";
-
+    return "rgb(" + r + ", " + g + ", " + b + ")";
 }
-	
-
