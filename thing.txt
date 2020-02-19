@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 hi !!
-
+sdfskljj
 =======
 bye
 >>>>>>> v2 of thing
+sdjfls
